@@ -1,28 +1,24 @@
 import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
-import Semaforo from "./Semaforo.jsx"; // Asegúrate de que el archivo se llame exactamente "Semaforo.jsx"
-
+import Semaforo from "./Semaforo.jsx"; 
+import Container from './Container.jsx';
 const Home = () => {
     return (
-        <div className="text-center">
-            {/* Semáforo */}
-            <div className="d-flex justify-content-center my-5">
-                <Semaforo />
-            </div>
-
-            <h1 className="text-center mt-5">Hello Rigo!</h1>
-            <p>
-                <img src={rigoImage} />
-            </p>
-            <a href="#" className="btn btn-success">
-                If you see this green button... bootstrap is working...
-            </a>
-            <p>
-                Made by{" "}
-                <a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with love!
-            </p>
-        </div>
-    );
-};
+        
+   
+    <div className="text-center"> 
+      <Semaforo />
+      <Container>
+        <h2>Semáforo Interactivo</h2>
+        <p>
+          Este proyecto demuestra un semáforo funcional construido con React.
+          Puedes controlar las luces, añadir dinámicamente el color púrpura y
+          generar tonos aleatorios. Es un extra que me ha pedido Alcides. 
+          No he querido meterle glow al color porque queria que se note el randomize.
+        </p>
+      </Container>
+    </div>
+  );
+}
 
 export default Home;
